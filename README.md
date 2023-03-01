@@ -1,6 +1,6 @@
 # 남궁성 강사님의 spring-basic 강의
 
-[남궁성님의 깃](https://github.com/castello/spring_basic)
+[남궁성님의 깃허브](https://github.com/castello/spring_basic)
 
 # Spring MVC
 
