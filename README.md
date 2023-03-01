@@ -13,4 +13,5 @@
 
 [스프링 MVC](https://github.com/MeteorLee/spring_basic/blob/main/ch2/md/SpringMVC.md)
 
-- 스프링 mvc의 정확한 구조를 잘 알지 못했는데 알게 됨
+- 스프링 mvc의 정확한 구조
+- return해서 view를 찾아가는 방식
