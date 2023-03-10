@@ -3,13 +3,13 @@ package com.fastcampus.ch2;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-// 1. ¿ø°Ý È£Ãâ°¡´ÉÇÑ ÇÁ·Î±×·¥À¸·Î µî·Ï
+// 1. ï¿½ï¿½ï¿½ï¿½ È£ï¿½â°¡ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 @Controller
 public class Hello {
-	// 2. URL°ú ¸Þ¼­µå¸¦ ¿¬
-	@RequestMapping("/hello")
-	private void main() {
-		System.out.println("Hello");
-	}
-	
+	// 2. URLï¿½ï¿½ ï¿½Þ¼ï¿½ï¿½å¸¦ ï¿½ï¿½
+//	@RequestMapping("/hello")
+//	private void main() {
+//		System.out.println("Hello");
+//	}
+//	
 }
