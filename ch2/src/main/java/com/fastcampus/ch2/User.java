@@ -1,5 +1,7 @@
 package com.fastcampus.ch2;
 
+import java.util.Date;
+
 /**
  * @author 82108
  *
@@ -9,7 +11,7 @@ public class User {
 	private String pwd;
 	private String name;
 	private String email;
-	private String birth;
+	private Date birth;
 	private String sns;
 	public String getId() {
 		return id;
@@ -35,10 +37,10 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getBirth() {
+	public Date getBirth() {
 		return birth;
 	}
-	public void setBirth(String birth) {
+	public void setBirth(Date birth) {
 		this.birth = birth;
 	}
 	public String getSns() {
