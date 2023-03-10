@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +13,7 @@
 <h1>name=${user.name}</h1>
 <h1>email=${user.email}</h1>
 <h1>birth=${user.birth}</h1>
-<h1>sns=${user.sns}</h1>
+<h1>hobby=${user.hobby}</h1>
+<h1>sns=${Arrays.toString(user.hobby)}</h1>
 </body>
 </html> 
