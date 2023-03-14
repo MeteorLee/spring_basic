@@ -1,12 +1,15 @@
+/*
 package com.fastcampus.ch3;
 
+*/
 /**
  * packageName :  com.fastcampus.ch3
  * fileName : ApplicationContextTest
  * author :  82108
  * date : 2023-03-13
  * description :
- */
+ *//*
+
 
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.context.*;
@@ -118,3 +121,4 @@ public class ApplicationContextTest {
 //        System.out.println("ac.getBeanNamesForType(Engine.class) = " + Arrays.toString(ac.getBeanNamesForType(Engine.class))); // Engine 또는 그 자손 타입인 빈의 이름을 배열로 반환
     }
 }
+*/
