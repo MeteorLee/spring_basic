@@ -18,7 +18,15 @@
     <li><a href="<c:url value='/register/add'/>">Sign in</a></li>
     <li><a href=""><i class="fas fa-search small"></i></a></li>
   </ul>
-</div><div style="text-align:center">
+</div>
+<script>
+  let msg = "${msg}"
+  if (msg=="WRT_OK") alert("성공적으로 등록되었습니다.")
+  if (msg=="DEL_OK") alert("성공적으로 삭제되었습니다.");
+  if (msg=="DEL_ERR") alert("삭제에 실패했습니다.");
+</script>
+<div style="text-align:center">
+  <button type="button" id="writeBtn" onclick="location.href='<c:url value="/board/write"/>'">글쓰기</button>
   <table border="1">
     <tr>
       <th>번호</th>
@@ -27,13 +35,13 @@
       <th>등록일</th>
       <th>조회수</th>
     </tr>
-    <c:forEach var="board" items="${list}">
+    <c:forEach var="boardDto" items="${list}">
     <tr>
-      <th>${board.bno}</th>
-      <th>${board.title}</th>
-      <th>${board.writer}</th>
-      <th>${board.reg_date}</th>
-      <th>${board.view_cnt}</th>
+      <th>${boardDto.bno}</th>
+      <th><a href="<c:url value='/board/read?bno=${boardDto.bno}&page=${page}&pageSize=${pageSize}'/>">${boardDto.title}</a></th>
+      <th>${boardDto.writer}</th>
+      <th>${boardDto.reg_date}</th>
+      <th>${boardDto.view_cnt}</th>
     </tr>
     </c:forEach>
   </table>

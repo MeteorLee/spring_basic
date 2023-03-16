@@ -61,4 +61,14 @@ public class BoardDaoImpl implements BoardDao {
         return session.update(namespace+"increaseViewCnt", bno);
     } // int update(String statement, Object parameter)
 
+    @Override
+    public List<BoardDto> selectSelectPage(SearchCondition sc) throws Exception {
+        return session.selectList(namespace+"searchSelectPage", sc);
+    }
+
+    @Override
+    public int searchResultCnt(SearchCondition sc) throws Exception {
+        return session.selectOne(namespace+"searchResultCnt", sc);
+    }
+
 }
